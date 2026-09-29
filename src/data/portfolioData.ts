@@ -1,3 +1,7 @@
+import acadlinkShowcase from '../assets/images/acadlink_showcase.jpg';
+import sigtmShowcase from '../assets/images/SIGTM_showcase.jpg';
+import agromudasShowcase from '../assets/images/AgroMudas_showcase.jpg';
+
 export interface Project {
   id: string;
   title: string;
@@ -89,7 +93,7 @@ export const PORTFOLIO_DATA = {
       category: 'Rede Social Académica',
       tagline: 'Rede Social Académica para Ensino Superior',
       summary: 'Plataforma desenvolvida para conectar estudantes e docentes de diferentes instituições de ensino superior.',
-      image: '/src/assets/images/acadlink_showcase.jpg',
+      image: acadlinkShowcase,
       technologies: ['React', 'Django', 'Python', 'PostgreSQL', 'REST API'],
       role: 'Full-Stack Developer (Concepção, Backend, Base de Dados & Frontend)',
       overview: 'O Acadlink foi concebido para quebrar o isolamento de estudantes universitários e centralizar a partilha de conhecimento académico entre faculdades.',
@@ -117,7 +121,7 @@ export const PORTFOLIO_DATA = {
       category: 'Gestão Tributária Municipal',
       tagline: 'Sistema de Gestão Tributária Municipal',
       summary: 'Sistema para arrecadação e controlo tributário municipal, cadastro de contribuintes e emissão de taxas.',
-      image: '/src/assets/images/SIGTM_showcase.jpg',
+      image: sigtmShowcase,
       technologies: ['React', 'Django', 'Python', 'PostgreSQL', 'REST API'],
       role: 'Desenvolvimento Full-Stack & Modelação Tributária',
       overview: 'O SIGTM (Sistema de Gestão Tributária Municipal) é uma plataforma governamental que centraliza os processos de cobrança, cálculo de taxas municipais, emissão de certidões e gestão cadastral de munícipes e imóveis.',
@@ -145,7 +149,7 @@ export const PORTFOLIO_DATA = {
       category: 'Plataforma Agrícola & Viveiro',
       tagline: 'Gestão e Catálogo de Viveiros e Mudas Agrícolas',
       summary: 'Plataforma para gestão de viveiros, controlo de lotes de mudas, encomendas agrícolas e acompanhamento de produção.',
-      image: '/src/assets/images/AgroMudas_showcase.jpg',
+      image: agromudasShowcase,
       technologies: ['React', 'Python', 'Django', 'PostgreSQL', 'Tailwind CSS'],
       role: 'Full-Stack Developer & Modelação de Inventário Agrícola',
       overview: 'O AgroMudas é um sistema especializado para viveiristas e produtores agrícolas, unindo a gestão interna do ciclo de vida das mudas com um catálogo digital de encomendas para agricultores.',
