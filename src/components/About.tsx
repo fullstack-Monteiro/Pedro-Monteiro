@@ -31,7 +31,7 @@ export const About: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         <motion.div {...fadeUp(0)} className="mb-6 sm:mb-8 pb-4" style={{ borderBottom: '1px solid var(--border-soft)' }}>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-center sm:text-left" style={{ color: 'var(--text)' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-center sm:text-left" style={{ color: 'var(--text)' }}>
             {t.about.title}
           </h2>
         </motion.div>

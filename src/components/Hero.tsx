@@ -50,10 +50,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProjects, onContactClick })
 
           {/* Heading */}
           <motion.h1 {...fadeItem(0.1)} className="tracking-tight leading-[1.08] mb-3 sm:mb-5 text-balance">
-            <span className="block font-bold text-[1.75rem] sm:text-4xl md:text-5xl" style={{ color: 'var(--text)' }}>
+            <span className="block font-bold text-[2rem] sm:text-5xl md:text-6xl" style={{ color: 'var(--text)' }}>
               {PORTFOLIO_DATA.personal.name}
             </span>
-            <span className="block font-normal text-[1.2rem] sm:text-2xl md:text-3xl mt-1 sm:mt-2" style={{ color: 'var(--text-muted)' }}>
+            <span className="block font-normal text-[1.35rem] sm:text-3xl md:text-4xl mt-1 sm:mt-2" style={{ color: 'var(--text-muted)' }}>
               {t.hero.title}
             </span>
           </motion.h1>

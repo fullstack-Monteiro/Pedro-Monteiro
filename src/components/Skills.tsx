@@ -41,7 +41,7 @@ export const Skills: React.FC = () => {
           className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 mb-6 sm:mb-8 pb-4"
           style={{ borderBottom: '1px solid var(--border-soft)' }}
         >
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight shrink-0 text-center sm:text-left" style={{ color: 'var(--text)' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight shrink-0 text-center sm:text-left" style={{ color: 'var(--text)' }}>
             {t.skills.title}
           </h2>
 

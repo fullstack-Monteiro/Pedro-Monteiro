@@ -81,7 +81,7 @@ export const Contact: React.FC<ContactProps> = ({ initialSubject = '', onOpenPri
 
         {/* Section header */}
         <div className="mb-6 sm:mb-8 md:mb-10 pb-4" style={{ borderBottom: '1px solid var(--border-soft)' }}>
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-center sm:text-left" style={{ color: 'var(--text)' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-center sm:text-left" style={{ color: 'var(--text)' }}>
             {t.contact.title}
           </h2>
         </div>
