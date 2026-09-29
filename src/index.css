@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Instrument Serif", Georgia, Cambria, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1c1917;
+    background-color: #FAF9F5;
+    overflow-x: hidden;
+    min-width: 320px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  img, video { max-width: 100%; height: auto; display: block; }
+
+  :focus-visible {
+    outline: 2px solid #1c1917;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+  :focus:not(:focus-visible) { outline: none; }
+
+  button, a { -webkit-tap-highlight-color: transparent; }
+}
+
+@layer utilities {
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-none::-webkit-scrollbar { display: none; }
+
+  .px-safe {
+    padding-left:  max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+  .pb-safe { padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
+
+  .text-balance { text-wrap: balance; }
+  .text-pretty  { text-wrap: pretty; }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(18px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .section-fade { animation: fadeUp 0.5s cubic-bezier(0.22,1,0.36,1) both; }
+
+  .stagger-1 { animation-delay:   0ms; }
+  .stagger-2 { animation-delay:  80ms; }
+  .stagger-3 { animation-delay: 160ms; }
+  .stagger-4 { animation-delay: 240ms; }
+  .stagger-5 { animation-delay: 320ms; }
+}
+
+@layer components {
+  /* Cards whose accents are driven by the --brand custom property (set per card: Skills, Services) */
+  .brand-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+  }
+  .brand-card:hover {
+    border-color: color-mix(in srgb, var(--brand) 50%, transparent);
+  }
+
+  .brand-chip {
+    background: color-mix(in srgb, var(--brand) 9%, transparent);
+    border: 1px solid color-mix(in srgb, var(--brand) 26%, transparent);
+    color: var(--brand);
+  }
+  .brand-card:hover .brand-chip {
+    background: color-mix(in srgb, var(--brand) 16%, transparent);
+  }
+
+  .brand-title { color: var(--text); }
+  .brand-card:hover .brand-title { color: var(--brand); }
+}
